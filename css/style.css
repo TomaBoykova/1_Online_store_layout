@@ -1,3 +1,72 @@
 *, *::before, *::after {
    box-sizing: border-box;
 }
+
+/*
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'PT Sans', sans-serif;
+*/
+
+body {
+   margin: 0;
+}
+
+.nav {
+   padding: 40px 0;
+}
+
+.container {
+   width: 1170px;
+   margin: 0 auto;
+}
+
+.nav__row {
+display: flex;
+justify-content: space-between;
+}
+.nav__logo, a.nav__logo {
+   text-decoration: none;
+   font-family: 'Noto Sans', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 38px;
+   color: #000000;
+}
+
+a.nav__logo:hover {
+   text-decoration: underline;
+   color: #F72464;
+}
+
+.nav__list {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   display: flex;
+   
+}
+.nav__item {
+   margin-right: 30px;
+   font-size: 18px;
+}
+.nav__item:last-child{
+   margin-right: 0;
+}
+
+
+.nav__link {
+   text-decoration: none;
+   color: #000000;
+}
+.nav__link:hover{
+   color: #F72464;
+}
+
+
+.nav__cart {
+   width: 40px;
+   height: 40px;
+   background-color: rgb(173, 255, 80);
+}
