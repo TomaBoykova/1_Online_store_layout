@@ -12,18 +12,21 @@ body {
    margin: 0;
 }
 
-.nav {
-   padding: 40px 0;
-}
-
 .container {
    width: 1170px;
    margin: 0 auto;
 }
 
+
+/* Navig*/
+
+.nav {
+   padding: 40px 0;
+}
 .nav__row {
 display: flex;
-justify-content: space-between;
+justify-content: flex-start;
+align-items: center;
 }
 .nav__logo, a.nav__logo {
    text-decoration: none;
@@ -33,29 +36,27 @@ justify-content: space-between;
    font-size: 28px;
    line-height: 38px;
    color: #000000;
+   margin-bottom: 6px;
 }
-
 a.nav__logo:hover {
    text-decoration: underline;
    color: #F72464;
 }
-
 .nav__list {
    margin: 0;
    padding: 0;
    list-style-type: none;
    display: flex;
-   
+   margin-left: 100px;
 }
 .nav__item {
    margin-right: 30px;
    font-size: 18px;
+   
 }
 .nav__item:last-child{
    margin-right: 0;
 }
-
-
 .nav__link {
    text-decoration: none;
    color: #000000;
@@ -63,10 +64,87 @@ a.nav__logo:hover {
 .nav__link:hover{
    color: #F72464;
 }
-
-
 .nav__cart {
-   width: 40px;
-   height: 40px;
-   background-color: rgb(173, 255, 80);
+   margin-left: auto;
+}
+.nav__cart-link {
+   padding: 7px;
+   display: block;
+   position: relative;
+   margin-top: 3px; 
+}
+.nav__cart-number {
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   top: 0;
+   right: 0;
+   border-radius: 50%;
+   color: aliceblue;
+   font-weight: bold;
+   font-size: 15px;
+   line-height: 20px;
+   text-align: center;
+   background: #F72464;
+}
+
+
+/* Header */
+
+.header {
+}
+.container {
+}
+.header__row {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   position: relative;
+}
+.header__content {
+   left: 0;
+   position: absolute;
+   width: 670px;
+   
+}
+.header__title {
+   margin: 0;
+   font-family: 'Playfair Display', serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 72px;
+   line-height: 96px;
+   color: #000000;
+   margin-bottom: 20px;
+}
+.header__button {
+}
+.header__text {
+   font-family: 'Noto Sans', sans-serif;
+   font-size: 22px;
+   line-height: 1.5;
+   color: #000000;
+   margin-bottom: 60px;
+}
+.button {
+   display: inline-block;
+   background: #F72464;
+   box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
+   border-radius: 4px;
+   height: 51px;
+   font-family: 'Playfair Display', serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 26px;
+   line-height: 51px;
+   text-align: center;
+   color: #FFFFFF;
+   transition: box-shadow 0.3s ease-in-out;
+   padding: 0 35px;
+   text-decoration: none;
+}
+.button:hover {
+   box-shadow: 1px 5px 25px rgba(53, 20, 30, 0.555);
+}
+.header__photo {
 }
